@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de cursos</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>ID especificado: {{ curso_id }}</h1><hr>
+    <h2><strong>Nombre del curso:</strong> {{ curso.nombre }}</h2><hr>
+    <h2><strong>Cantidad de horas:</strong> {{ curso.cantidad_horas }}</h2><hr>
+    <h2>Estudiantes Inscritos</h2>
+    <ol>
+        {% if estudiantes %}
+            {% for estudiante in estudiantes %}
+                <li>{{ estudiante.nombre }} (Edad: {{ estudiante.edad }})</li>
+            {% endfor %}
+        {% else %}
+            <p>No hay estudiantes inscritos en este curso.</p>
+        {% endif %}
+    </ol><hr>
+</body>
+</html>
