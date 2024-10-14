@@ -1,34 +1,30 @@
-/* Estilo básico para la tabla */
+
 body{
-    font-family: Arial, sans-serif; /* Fuente legible */
+    font-family: Arial, sans-serif; 
 }
 table {
-    width: 100%; /* La tabla ocupará todo el ancho disponible */
-    border-collapse: collapse; /* Elimina los espacios entre celdas */
-    margin: 20px 0; /* Espaciado superior e inferior */
-    font-size: 18px; /* Tamaño de texto */
-    text-align: left; /* Alineación del texto */
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0; 
+    font-size: 18px; 
+    text-align: left; 
 }
 
-/* Estilo para las celdas (td y th) */
+
 th, td {
-    padding: 12px 15px; /* Relleno dentro de las celdas */
-    border: 1px solid #dddddd; /* Borde de las celdas */
+    padding: 12px 15px;
+    border: 1px solid #dddddd; 
 }
 
-/* Estilo para las filas alternas */
+
 tr:nth-child(even) {
-    background-color: #f3f3f3; /* Color de fondo para las filas pares */
+    background-color: #f3f3f3; 
 }
 
-/* Estilo para la fila de encabezado */
+
 th {
-    background-color: #009879; /* Color de fondo del encabezado */
-    color: white; /* Color del texto del encabezado */
-    font-weight: bold; /* Negrita para el texto del encabezado */
+    background-color: #009879; 
+    color: white; 
+    font-weight: bold; 
 }
 
-/* Estilo al pasar el mouse sobre las filas */
-tr:hover {
-    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
-}
